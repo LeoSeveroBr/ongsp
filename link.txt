@@ -1,0 +1,6 @@
+Gerenciador de arquivos
+https://files.000webhost.com/
+https://www.000webhost.com/cpanel-login
+
+
+<input TYPE="hidden" NAME="id" VALUE="<?php ($_SESSION['ID']  == ' ' ) ? ' ' : $_SESSION['ID'];?>">
