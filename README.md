@@ -23,3 +23,6 @@ do CEP do usuario.
 * Calendário comemorativo com eventos.
 * Desenvolver um aplicativo conectado a base de dados do site onde as informações serão trocadas simultaneamente. (Linguagem não definida 
 ainda, mais o site é totalmente responsivo.) 
+
+Metas cumpridas :
+*Organização do codigo, remoção de vestigios utilizados na faculdade deixo o sistema mais limpo e utilizavel  1.0.6
