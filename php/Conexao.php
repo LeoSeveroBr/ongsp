@@ -12,10 +12,7 @@ if (!$mysqli) {
     echo ("Can't connect to localhost. Errorcode: %d\n" . mysqli_connect_errno());
 }
 
-    if (mysqli_connect_errno()) {
-        die('Não foi possível conectar-se ao banco de dados: ' . mysqli_connect_error());
-        exit();
-    }
-   
-
-
+if (mysqli_connect_errno()) {
+    die('Nao foi possï¿½vel conectar-se ao banco de dados: ' . mysqli_connect_error());
+    exit();
+}

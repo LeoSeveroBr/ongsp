@@ -16,14 +16,18 @@ session_start();
     <title>OngSP</title>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1">
+   <link REL="SHORTCUT ICON" HREF="img/logoong.ico"> <!--   Img do icone que aparece na navegacao-->
 
-    <link rel="stylesheet" type="text/css" href="css/navBar.css" media="screen" />
-    <link rel="stylesheet" type="text/css" href="css/login.css">
-    <link rel="stylesheet" type="text/css" href="css/index.css">
-
-
+    <!-- 
+        <script type="text/javascript" src="../jquery/jquery.mask.min.js"></script>
+        <script type="text/javascript" src="../jquery/jquery-3.4.1.js"></script>
+        <script type="text/javascript" src="../jquery/jquery.mask.js"></script>
+        <script type="text/javascript" src="../jquery/jquery.validate.js"></script>
+        -->
     <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css" />
-    <link rel="stylesheet" href="bootstrap/bootstrap.min.css" />   
+    <link rel="stylesheet" href="bootstrap/bootstrap.min.css" />
+    <link rel="stylesheet" type="text/css" href="style.css" />
+
 
 
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
@@ -33,37 +37,24 @@ session_start();
 </head>
 
 <body>
-    <!--cabecalho-->
-    <div class="container-fluid">
-        <div class="container-fluid" id="navBar">
-            <ul class="nav nav-tabs">
-                <li class="#active#"><a href="index.php" >Inicio</a></li>
-                <li><a href="./php/Consulta.php">Consulta</a></li>
-                <li><a href="./php/Cadastro.php">Cadastro</a></li>
-                <li <?php echo (empty($_SESSION['id'])) ? " " : "hidden"; ?>>
-                    <button style="padding-top: 10px; text-align: center;" type="button" class="btn btn-info btn-md" data-toggle="modal" data-target="#modalLogin">Login</button>
-                </li>
-                <li>
-                    <a href="php/Deslogar.php" class="btn btn-danger btn-md">SAIR</a>
-                </li>
-            </ul>
-        </div>
-            <!--Modificar e colocar na nav bar  temporario-->
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-    
-        <!--corpo -->
+
+    <!-- Nav bar do site -->
+    <nav class="container-fluid" id="navBar">
+        <ul class="nav nav-tabs">
+            <li class="#active#"><a href="index.php">Inicio</a></li>
+            <li><a href="#" onclick="MenuPrincipal('consulta')"> Consulta </a></li>
+            <li><a href="#" onclick="MenuPrincipal('cadastro')">Cadastro</a></li>
+            <li <?php echo (empty($_SESSION['id'])) ? " " : "hidden"; ?>>
+                <button style=" padding-top: 14px; text-align: center;" type="button" class="btn btn-info btn-md" data-toggle="modal" data-target="#modalLogin">Login</button>
+            </li>
+            <li><a href="php/Deslogar.php" class="btn btn-danger btn-md">SAIR</a></li>
+        </ul>
+    </nav>
+
+    <!--corpo -->
+    <div id="conteudo" class="conteudo">
         <div class="jumbotron text-center">
-            <?php
+            <?php            
             if (isset($_SESSION['nao_cadastrado'])) {
             ?>
                 <div class="alert alert-danger">
@@ -75,11 +66,9 @@ session_start();
             ?>
             <h2>Site em cosntru&ccedil;&atilde;o para fins educacionais. Duvidas entre em contato : leocsevero@gmail.com</h2>
             <h1>OngSP</h1>
-            <iframe src="https://www.youtube.com/embed/9bl2ko6rhM0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <!--<iframe src="https://www.youtube.com/embed/9bl2ko6rhM0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>-->
             <p>Fa&ccedil;a a diferen&ccedil;a na vida de alguem.</p>
         </div>
-        <!--PARTE ONDE TERA INFORMA&ccedil;OES BASICA FIM OU MEIO -->
-
         <div class="container">
             <div class="row">
                 <div class="col-md-4">
@@ -105,42 +94,40 @@ session_start();
                 </div>
             </div>
         </div>
-        <br />
-        <br />
-        <br />
-        <br />
-        <!--RODAPE COM INFORMA&ccedil;cES DE CONTATO-->
-        <footer class="container-fluid bg-4 text-center">
-            <p>Desenvolvido por &nbsp;<a href="https://www.facebook.com/leonaldo.severo" id="footerNome" class="rodape1"> Leo Severo - Vers&atilde;o 1.0.6</a> </p>
-        </footer>
+    </div>
 
-        <!--Modal login-->
-        <div class="modal fade" id="modalLogin" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-            <div class="modal-dialog" role="document">
-                <div class="modal-content">
-                    <div class="container-fluid">
-                        <h3 class="title has-text-grey">Logar no Sistema</h3>
-                        <form action="php/Logar.php" method="POST" id="formLogin" name="formLogin">
-                            <div class="form-group">
-                                <label for="Email">Email</label>
-                                <input type="text" class="form-control" name="email" id="email">
-                            </div>
-                            <div class="form-group">
-                                <label for="Senha">Senha</label>
-                                <input type="password" class="form-control" name="senha" id="senha">
-                            </div>
-                            <button type="submit" class="btn btn-primary btn-right" value="logar">Entrar</button>
-                        </form>
-                        <div class="modal-footer">
-                            <button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
+    <!--Rodape do site-->
+    <!--<footer class="container-fluid bg-4 text-center">-->
+    <footer class="footer" id="footer">
+        <p>Desenvolvido por &nbsp;<a href="https://www.facebook.com/leonaldo.severo" id="footerNome" class="rodape1"> Leo Severo - Vers&atilde;o 1.0.6</a> </p>
+    </footer>
+    <!--Modal login-->
+    <div class="modal fade" id="modalLogin" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="container-fluid">
+                    <h3 class="title has-text-grey">Logar no Sistema</h3>
+                    <form action="php/Logar.php" method="POST" id="formLogin" name="formLogin">
+                        <div class="form-group">
+                            <label for="Email">Email</label>
+                            <input type="text" class="form-control" name="email" id="email">
                         </div>
-                        <Br>
-                        <Br>
+                        <div class="form-group">
+                            <label for="Senha">Senha</label>
+                            <input type="password" class="form-control" name="senha" id="senha">
+                        </div>
+                        <button type="submit" class="btn btn-primary btn-right" value="logar">Entrar</button>
+                    </form>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
                     </div>
+                    <Br>
+                    <Br>
                 </div>
             </div>
         </div>
     </div>
-    <script src="js/index.js"></script>
+    <script src="main.js"></script>
 </body>
+
 </html>
