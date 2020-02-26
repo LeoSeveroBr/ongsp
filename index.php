@@ -99,7 +99,7 @@ session_start();
     <!--Rodape do site-->
     <!--<footer class="container-fluid bg-4 text-center">-->
     <footer class="footer" id="footer">
-        <p>Desenvolvido por &nbsp;<a href="https://www.facebook.com/leonaldo.severo" id="footerNome" class="rodape1"> Leo Severo - Vers&atilde;o 1.0.6</a> </p>
+        <p>Desenvolvido por &nbsp;<a href="https://www.facebook.com/leonaldo.severo" id="footerNome" class="rodape1"> Leo Severo - Vers&atilde;o 1.1.0</a> </p>
     </footer>
     <!--Modal login-->
     <div class="modal fade" id="modalLogin" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
