@@ -17,12 +17,11 @@ Meu objetivo e aplicar melhorias e colocar ele em utilização pratica de forma 
 
 Aglumas metas :
 * Separar a tela de cadastro uma apenas para instituiçoes de caridades e outra para voluntarios.
-* Na tela de cadastro inserir via jquery um metodo que pegue os dados do correiosapi para prencher as informações automaticas unidos 
-do CEP do usuario.
 * Um mural de vagas com oportunidades.
 * Calendário comemorativo com eventos.
 * Desenvolver um aplicativo conectado a base de dados do site onde as informações serão trocadas simultaneamente. (Linguagem não definida 
 ainda, mais o site é totalmente responsivo.) 
+* Modificar query e estrutura da base de dados, separar tabelas de usuarios.
 
 Metas cumpridas :
-*Organização do codigo, remoção de vestigios utilizados na faculdade deixo o sistema mais limpo e utilizavel  1.0.6
+*Refaturado boa parte do sistemas, versão atual 1.1.0
