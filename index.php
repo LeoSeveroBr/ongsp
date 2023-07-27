@@ -1,13 +1,8 @@
 <?php
 session_start();
-//print_r($_SESSION);
-//test session variables
-//if (!empty($_SESSION) and $_SESSION['id'] == '14') {
-// echo	$okiMsg[] = "PHP sessions Ok\n";
-//} else {
-//echo	$errMsg[] = "Sessaes PHP Nao Funcionam<br>Verifique a instalacao do PHP no seu servidor\n";
-//}
-//exit();
+/* echo "<pre>";
+var_dump($_SESSION);
+echo "</pre>"; */
 ?>
 <!DOCTYPE html>
 <html lang="pt-br">
@@ -16,35 +11,23 @@ session_start();
     <title>OngSP</title>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1">
-   <link REL="SHORTCUT ICON" HREF="img/logoong.ico"> <!--   Img do icone que aparece na navegacao-->
-
-    <!-- 
-        <script type="text/javascript" src="../jquery/jquery.mask.min.js"></script>
-        <script type="text/javascript" src="../jquery/jquery-3.4.1.js"></script>
-        <script type="text/javascript" src="../jquery/jquery.mask.js"></script>
-        <script type="text/javascript" src="../jquery/jquery.validate.js"></script>
-        -->
+    <link REL="SHORTCUT ICON" HREF="img/logoong.ico"> <!--   Img do icone que aparece na navegacao-->
     <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css" />
     <link rel="stylesheet" href="bootstrap/bootstrap.min.css" />
     <link rel="stylesheet" type="text/css" href="style.css" />
-
-
-
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
-
 </head>
 
 <body>
-
     <!-- Nav bar do site -->
     <nav class="container-fluid" id="navBar">
         <ul class="nav nav-tabs">
             <li class="#active#"><a href="index.php">Inicio</a></li>
             <li><a href="#" onclick="MenuPrincipal('consulta')"> Consulta </a></li>
             <li><a href="#" onclick="MenuPrincipal('cadastro')">Cadastro</a></li>
-            <li <?php echo (empty($_SESSION['id'])) ? " " : "hidden"; ?>>
+            <li <?php echo (empty($_SESSION['id'])) ? "" : "hidden"; ?>>
                 <button style=" padding-top: 14px; text-align: center;" type="button" class="btn btn-info btn-md" data-toggle="modal" data-target="#modalLogin">Login</button>
             </li>
             <li><a href="php/Deslogar.php" class="btn btn-danger btn-md">SAIR</a></li>
@@ -54,7 +37,7 @@ session_start();
     <!--corpo -->
     <div id="conteudo" class="conteudo">
         <div class="jumbotron text-center">
-            <?php            
+            <?php
             if (isset($_SESSION['nao_cadastrado'])) {
             ?>
                 <div class="alert alert-danger">
@@ -114,7 +97,7 @@ session_start();
                         </div>
                         <div class="form-group">
                             <label for="Senha">Senha</label>
-                            <input type="password" class="form-control" name="senha" id="senha">
+                            <input type="password" class="form-control" name="password" id="password">
                         </div>
                         <button type="submit" class="btn btn-primary btn-right" value="logar">Entrar</button>
                     </form>
@@ -128,6 +111,6 @@ session_start();
         </div>
     </div>
     <script src="main.js"></script>
+    <div style="text-align: center"></div>    
 </body>
-
 </html>

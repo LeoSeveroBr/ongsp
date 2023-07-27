@@ -1,8 +1,7 @@
 <?php
 session_start();
 include('Conexao.php');
-$sql = mysqli_query($mysqli, "SELECT * FROM usuario") or die(mysqli_error($mysqli) 
-);
+$sql = mysqli_query($mysqli, "SELECT * FROM usuario") or die(mysqli_error($mysqli));
 ?>
 <div class="consulta">
     <div class=" jumbotron text-center" class="form-horizontal">
@@ -24,15 +23,15 @@ $sql = mysqli_query($mysqli, "SELECT * FROM usuario") or die(mysqli_error($mysql
                         <?php
                         if (isset($sql)) {
                             while ($dado = mysqli_fetch_assoc($sql)) {
-                                echo " <tr><td>" . $dado['NOME'] . "</td>";
-                                echo "<td>" . $dado['TELEFONE'] . "</td>";
-                                echo "<td>" . $dado['ENDERECO'] . "</td>";
+                                echo " <tr><td>" . $dado['nome'] . "</td>";
+                                echo "<td>" . $dado['telefone'] . "</td>";
+                                echo "<td>" . $dado['endereco'] . "</td>";
 //                                echo "<td>" . $dado['RG'] . "</td>";
 //                                echo "<td>" . $dado['CNPJ'] . "</td>";
-                                echo "<td>" . $dado['INSTITUICAO'] . "</td>";
-                                echo "<td>" . $dado['DESCRICAO'] . "</td>";
-                                echo "<td>" . $dado['CONHECIMENTO'] . "</td>";
-                                echo "<td>" . $dado['EMAIL'] . "</td>  </tr>";
+                                echo "<td>" . $dado['instituicao'] . "</td>";
+                                echo "<td>" . $dado['descricao'] . "</td>";
+                                echo "<td>" . $dado['conhecimento'] . "</td>";
+                                echo "<td>" . $dado['email'] . "</td>  </tr>";
                             }
                         }
                         ?>

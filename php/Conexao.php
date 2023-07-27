@@ -2,8 +2,9 @@
 $host = "localhost";
 $usuario = "root";
 $senha = "";
-$bd = "ongsp";
+$bd = "ong_sp";
 $mysqli = new mysqli($host, $usuario, $senha, $bd);
+
 
 //print_r($mysqli);
 

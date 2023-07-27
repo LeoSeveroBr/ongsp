@@ -1,0 +1,1 @@
+O arquivo abaixo e a estrutura da base de dados com uma tabela e algumas dados inseridos para testes.

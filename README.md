@@ -10,8 +10,9 @@ Dentro do projeto foi utilizado : Html5, Css, Php7, JQuery, Bootstrap 3 com uma 
 Observação a aplicação não está configurada de forma segura, por isso ao utilizar o código se atente a padrões de segurança.
 Tudo criado do zero.
 
-O site se encontra no ar no link :http://ongsp.tk/
-Foi utilizado servidores gratuitos.
+Servidor fora do ar =
+//O site se encontra no ar no link :http://ongsp.tk///
+//Foi utilizado servidores gratuitos.//
 
 Meu objetivo e aplicar melhorias e colocar ele em utilização pratica de forma global.
 
@@ -22,6 +23,8 @@ Aglumas metas :
 * Desenvolver um aplicativo conectado a base de dados do site onde as informações serão trocadas simultaneamente. (Linguagem não definida 
 ainda, mais o site é totalmente responsivo.) 
 * Modificar query e estrutura da base de dados, separar tabelas de usuarios.
+*Modificar todo o layout do sistema usando Bootstrap 5 e utilizar php8 
 
 Metas cumpridas :
 *Refaturado boa parte do sistemas, versão atual 1.1.0
+*Atualizado algumas funções php
