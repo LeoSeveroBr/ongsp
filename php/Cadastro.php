@@ -18,9 +18,9 @@ if (isset($_SESSION['email']) && !empty($_SESSION['email']) && isset($_SESSION['
          var_dump($dados_usuario);
          echo "</pre>";  */
 };      
-     echo "<pre>";
+    /*   echo "<pre>";
         var_dump($_SESSION);
-        echo "</pre>";  
+        echo "</pre>";   */
 
 ?>
 <div id="cadastro">
