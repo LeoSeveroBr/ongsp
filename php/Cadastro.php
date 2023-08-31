@@ -12,11 +12,23 @@ if (isset($_SESSION['email']) && !empty($_SESSION['email']) && isset($_SESSION['
     $sql = "SELECT * FROM usuario WHERE email LIKE '%" . $email . "%' AND password LIKE '%" . $senha . "%'";
     $con = $mysqli->query($sql) or die($mysqli->error);
     $dados_usuario = mysqli_fetch_assoc($con);
+<<<<<<< HEAD
     $_SESSION['id'] = $dados_usuario['id'];  
     /* echo "<pre>";
     var_dump($dados_usuario);
     echo "</re>"; */
 }; 
+=======
+    $_SESSION['id'] = $dados_usuario['id'];
+    /*  echo "<pre>";
+         var_dump($dados_usuario);
+         echo "</pre>";  */
+};      
+    /*   echo "<pre>";
+        var_dump($_SESSION);
+        echo "</pre>";   */
+
+>>>>>>> 0c97d087d3eae9e189bcdafa03adcb2094519401
 ?>
 <div class="container" id="cadastro">
 
@@ -176,4 +188,7 @@ if (isset($_SESSION['email']) && !empty($_SESSION['email']) && isset($_SESSION['
         </div>
     </div>
 </div>
+<<<<<<< HEAD
 </div>
+=======
+>>>>>>> 0c97d087d3eae9e189bcdafa03adcb2094519401
