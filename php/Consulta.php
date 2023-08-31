@@ -7,27 +7,25 @@ $sql = mysqli_query($mysqli, "SELECT * FROM usuario") or die(mysqli_error($mysql
     <div class=" jumbotron text-center" class="form-horizontal">
         <form action="php/Consulta.php" method="GET">
             <div class="table-responsive">
-                <table class="table table-bordered" id="Consulta">
-                    <thead>                          
-                    <th>NOME</th>
-                    <th>TELEFONE</th>
-                    <th>ENDERECO</th>
-                    <!--<th>RG</th>-->
-                    <!--<th>CNPJ</th>-->
-                    <th>INSTITUICAO</th>
-                    <th>DESCRICAO</th>
-                    <th>CONHECIMENTO</th>
-                    <th>EMAIL</th>
+                <table class="table table-bordered table-hover" id="Consulta" style="margin-top: 25px;">
+                    <thead class="table-info">
+                        <tr>
+                            <th scope="col">NOME</th>
+                            <th scope="col">TELEFONE</th>
+                            <th scope="col">ENDEREÇO</th>
+                            <th scope="col">INSTITUICÃO</th>
+                            <th scope="col">DESCRICÂO</th>
+                            <th scope="col">CONHECIMENTO</th>
+                            <th scope="col">EMAIL</th>
+                        </tr>
                     </thead>
-                    <tbody>                        
+                    <tbody>
                         <?php
                         if (isset($sql)) {
                             while ($dado = mysqli_fetch_assoc($sql)) {
                                 echo " <tr><td>" . $dado['nome'] . "</td>";
                                 echo "<td>" . $dado['telefone'] . "</td>";
                                 echo "<td>" . $dado['endereco'] . "</td>";
-//                                echo "<td>" . $dado['RG'] . "</td>";
-//                                echo "<td>" . $dado['CNPJ'] . "</td>";
                                 echo "<td>" . $dado['instituicao'] . "</td>";
                                 echo "<td>" . $dado['descricao'] . "</td>";
                                 echo "<td>" . $dado['conhecimento'] . "</td>";
@@ -35,37 +33,9 @@ $sql = mysqli_query($mysqli, "SELECT * FROM usuario") or die(mysqli_error($mysql
                             }
                         }
                         ?>
-
                     </tbody>
                 </table>
             </div>
         </form>
     </div>
-    <style>
-        table {
-            width:100%;
-        }
-        table, th, td {
-            border: 3px solid black;
-            border-collapse: collapse;
-        }
-        th, td {
-            padding: 15px;
-            text-align: left;
-        }
-        table#t01 tr:nth-child(even) {
-            background-color: #eee;
-        }
-        table#Consulta tr:nth-child(odd) {
-            background-color: #fff;
-        }
-        table#Consulta th {
-            background-color: #007bff;
-            color: white;
-        }
-        .consulta{
-            background-color: #0069d9;
-        }
-    </style>
 </div>
-

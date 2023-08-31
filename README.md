@@ -17,14 +17,15 @@ Servidor fora do ar =
 Meu objetivo e aplicar melhorias e colocar ele em utilização pratica de forma global.
 
 Aglumas metas :
+* Modificar todo o layout do sistema usando Bootstrap 5 e utilizar php8 
 * Separar a tela de cadastro uma apenas para instituiçoes de caridades e outra para voluntarios.
 * Um mural de vagas com oportunidades.
 * Calendário comemorativo com eventos.
-* Desenvolver um aplicativo conectado a base de dados do site onde as informações serão trocadas simultaneamente. (Linguagem não definida 
-ainda, mais o site é totalmente responsivo.) 
 * Modificar query e estrutura da base de dados, separar tabelas de usuarios.
-*Modificar todo o layout do sistema usando Bootstrap 5 e utilizar php8 
+* Adicionar um sistema de segurança eficiente.
+* Botão para excluir cadastro do usuario quando estiver logado no sistema.
+
 
 Metas cumpridas :
-*Refaturado boa parte do sistemas, versão atual 1.1.0
-*Atualizado algumas funções php
+* Refaturado boa parte do sistemas, versão atual 1.1.0
+* Atualizado algumas funções php5 para o php8

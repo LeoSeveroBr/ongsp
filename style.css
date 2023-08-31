@@ -1,53 +1,114 @@
-footer{
-    background-color: #3330f6b0;   
-    color: white;
-    height: 50px;
-    clear: both;
-    text-align: center;
-    padding: 10px 0px 0px 0px;   
-    /*position: fixed;*/
-     /*margin-top: auto;*/
-}
 * {
     margin: 0;
     padding: 0;
     font-family: Arial, Helvetica, sans-serif;
 }
-    
-#navBar {
-    background-color:deepskyblue;
-}      
 
-/* rodape */
-/*footer {
-    background-color: #3330f6b0;   
-    color: white;
-    padding: 15px;
-    position: fixed;
-    bottom:0;
-    left:0;      
-    clear: both;              
-}             */
-a:focus, a:hover {
-    color: white;
-    text-decoration: underline;
-} 
-h3{
-    text-align: center;
-    padding-bottom: 15px;
+.site-footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
 }
-img{
-    padding-bottom: 25px;
-    /*                width: 330px;
-                    height: 220px;*/
+
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    margin: 0;
 }
-.rodape1{
+
+#conteudo {
+    flex: 1;
+}
+
+.bg-primary {
+    background-color: #6ea8fe;
+}
+
+.site-footer {
+    background-color: rgba(0, 0, 0, 0.2);
+    padding: 1rem;
+}
+
+
+.carousel-inner img {
+    width: 100%;
+    /* Set width to 100% */
+    margin: auto;
+    min-height: 200px;
+}
+
+.carousel-control-prev,
+.carousel-control-next {
     color: black;
 }
-button{
-    padding-top: 14px;
-}           
 
-.hero.is-success {
-    background: #f2f7fa;
+@media (max-width: 600px) {
+    .carousel-caption {
+        display: none;
+    }
+}
+
+a:focus,
+a:hover {
+    color: blue;
+    text-decoration: underline;
+}
+
+h3 {
+    color: black;
+    font-size: larger;
+}
+
+p {
+    color: black;
+    font-size: medium;
+}
+
+#FotosBaixo {
+    padding-top: 10px;
+}
+
+/* CSS da pagina consulta */
+table {
+    width: 100%;
+}
+
+table,
+th,
+td {
+    border: 3px solid black;
+    border-collapse: collapse;
+}
+
+th,
+td {
+    padding: 15px;
+    text-align: left;
+}
+
+table#t01 tr:nth-child(even) {
+    background-color: #eee;
+}
+
+table#Consulta tr:nth-child(odd) {
+    background-color: #fff;
+}
+
+table#Consulta th {
+    background-color: #007bff;
+    color: white;
+}
+
+.consulta {
+    background-color: #0069d9;
+}
+
+
+/* CSS da pagina cadastro */
+
+#CentralizandoTexto {
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }

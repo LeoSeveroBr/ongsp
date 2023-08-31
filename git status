@@ -1,0 +1,65 @@
+[33mcommit 310b47cc14cb9f899e49fd70baad3ed40f13a33d[m[33m ([m[1;36mHEAD -> [m[1;32mmaster[m[33m, [m[1;31morigin/master[m[33m, [m[1;31morigin/HEAD[m[33m)[m
+Author: Leo Severo <40842398+LeoSeveroBr@users.noreply.github.com>
+Date:   Wed Feb 26 16:58:24 2020 -0300
+
+    Update README.md
+
+[33mcommit e7e9997505c3a80db1ba0a710eb4fddfc31f2ec1[m
+Author: LeoSeveroBr <leocsevero@gmail.com>
+Date:   Wed Feb 26 16:41:24 2020 -0300
+
+    1.1.0
+
+[33mcommit 42b6c4dd70e621d4a050084e3267b395e99868a3[m
+Author: LeoSeveroBr <leocsevero@gmail.com>
+Date:   Wed Feb 26 16:39:17 2020 -0300
+
+    Refaturado varias parte do sistema
+
+[33mcommit 623baff054f63d238a28c0e57b96eb060927b4e1[m
+Author: LeoSeveroBr <leocsevero@gmail.com>
+Date:   Thu Feb 20 22:55:12 2020 -0300
+
+    Novos arquivos separados
+
+[33mcommit 505ef9f734a3087b644f0b6f20b38494ea046733[m
+Author: LeoSeveroBr <leocsevero@gmail.com>
+Date:   Thu Feb 20 22:54:15 2020 -0300
+
+     Organizacao do codigo iniciado pelo index.php
+
+[33mcommit efc10ccc65416a3a153d69c186e2b363a3e4c165[m
+Author: LeoSeveroBr <leocsevero@gmail.com>
+Date:   Thu Feb 20 21:36:40 2020 -0300
+
+    Arquivos sem uso
+
+[33mcommit afa9623dc9ded1036e61547394f95b66ea8de357[m
+Author: LeoSeveroBr <leocsevero@gmail.com>
+Date:   Thu Feb 20 21:35:34 2020 -0300
+
+    Remocao de arquivos banais
+
+[33mcommit 48c70ffc4ac874685152166575113c8a38a2ca0f[m
+Author: LeoSeveroBr <leocsevero@gmail.com>
+Date:   Thu Feb 20 21:00:26 2020 -0300
+
+    Removido informações Desnecessarias
+
+[33mcommit 78c0a49c9137cdd8139739439e853cdb4eaa0069[m
+Author: LeoSeveroBr <leocsevero@gmail.com>
+Date:   Thu Feb 20 20:56:42 2020 -0300
+
+    Removido a inteligencia artificial
+
+[33mcommit 6d4a867b3e02dc487aae6931b758be7a226264c1[m
+Author: Leo Severo <40842398+ConstantineBR@users.noreply.github.com>
+Date:   Thu Jan 2 13:16:06 2020 -0300
+
+    Create README.md
+
+[33mcommit db394d3d47821c4d6343baaf6035851e3f316582[m
+Author: ConstantineBR <leocsevero@gmail.com>
+Date:   Thu Jan 2 12:59:10 2020 -0300
+
+    1.0.1

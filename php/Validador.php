@@ -1,7 +1,6 @@
 <?php
 session_start();
  include('./Conexao.php'); 
-/* include('Conexao.php'); */
 
 $erro = 0; 
 $Val_Email = $_POST['email'];
@@ -95,7 +94,7 @@ if ($erro) {
    ';    
 } else {
     if ($_SESSION['Tipo_Cadastro'] == 1) { // Alterar dados vai pra essa parte
-        $sql = "UPDATE usuario SET NOME= '" . $nome . "',TELEFONE='" . $telefone . "',ENDERECO='" . $endereco . "',RG='" . $rg . "',CNPJ='" . $cnpj . "',INSTITUICAO='" . $instituicao . "',DESCRICAO='" . $descricaoh1 . "',CONHECIMENTO='" . $conhecimento . "',EMAIL='" . $email . "',PASSWORD='" . $senha . "' WHERE id = " . $id;
+        $sql = "UPDATE usuario SET NOME= '" . $nome . "',TELEFONE='" . $telefone . "',ENDERECO='" . $endereco . "',RG='" . $rg . "',CNPJ='" . $cnpj . "',INSTITUICAO='" . $instituicao . "',DESCRICAO='" . $descricao . "',CONHECIMENTO='" . $conhecimento . "',EMAIL='" . $email . "',PASSWORD='" . $senha . "' WHERE id = " . $id;
         if ($mysqli->query($sql) === TRUE) {
             echo "<h2>Dados Atualizado Com Sucesso.</h2>";
             echo "   <script>
